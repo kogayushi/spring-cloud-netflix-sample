@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: service-producer
+
+server:
+  port: 9000
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 3
+    metadata-map:
+      instance-id: "${spring.application.name}:${random.value}"
+      turbine-cluster: producer-cluster

@@ -1,0 +1,1 @@
+include 'service-registry','service-producer','service-consumer','turbine','hystrix-dashboard'
