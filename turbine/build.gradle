@@ -2,6 +2,6 @@ group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 
 dependencies {
-    compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard')
     compile('org.springframework.cloud:spring-cloud-starter-netflix-turbine')
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard')
 }
